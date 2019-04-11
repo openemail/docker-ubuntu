@@ -1,24 +1,27 @@
-# hub.docker.com/r/tiredofit/ubuntu
+# hub.docker.com/r/openemail/ubuntu
 
-[![Build Status](https://img.shields.io/docker/build/tiredofit/ubuntu.svg)](https://hub.docker.com/r/tiredofit/ubuntu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/ubuntu.svg)](https://hub.docker.com/r/tiredofit/ubuntu)
-[![Docker Stars](https://img.shields.io/docker/stars/tiredofit/ubuntu.svg)](https://hub.docker.com/r/tiredofit/ubuntu)
-[![Docker 
-Layers](https://images.microbadger.com/badges/image/tiredofit/ubuntu.svg)](https://microbadger.com/images/tiredofit/ubuntu)
 
 # Introduction
 
 Dockerfile to build an [ubuntu](https://www.ubuntu.org/) container image.
 
-* Currently tracking Trusty (14.04), Xenial (16.04), Bionic (18.04)
+* Currently tracking Bionic (18.04)
 * [s6 overlay](https://github.com/just-containers/s6-overlay) enabled for PID 1 Init capabilities
 * [zabbix-agent](https://zabbix.org) installed individual container monitoring.
 * Cron installed along with other tools (curl, less, logrotate, nano, vim) for easier management.
 * Ability to update User ID and Group ID Permissions for Development Purposes dyanmically.
 
-# Authors
+# Original Authors
 
 - [Dave Conroy](dave at tiredofit dot ca) [https://github.com/tiredofit]
+
+# Authors
+
+- [Chinthaka Deshapriya](https://www.linkedin.com/in/chinthakadeshapriya/)
+
+# Contributors
+ 
+ - [Amila Kothalawala](https://www.linkedin.com/in/amila-m-kothalawala-87357152/)
 
 # Table of Contents
 
