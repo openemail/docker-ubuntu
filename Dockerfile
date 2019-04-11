@@ -16,11 +16,17 @@ LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
       apt-get update && \
       apt-get install -y --no-install-recommends \
                ca-certificates \
+               apt-transport-https \
+               aptitude \
+               bash \
+               procps \
+               less \
                curl \
                gnupg \
                less \
                logrotate \
                msmtp \
+               net-tools \
                nano \
                tzdata \
                vim-tiny \
