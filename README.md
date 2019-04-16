@@ -8,13 +8,13 @@ Dockerfile to build an [ubuntu](https://www.ubuntu.org/) container image.
 * Cron installed along with other tools (curl, less, logrotate, nano, vim) for easier management.
 * Ability to update User ID and Group ID Permissions for Development Purposes dyanmically.
 
-# Authors
+# Maintainers
 
 - [Chinthaka Deshapriya](https://www.linkedin.com/in/chinthakadeshapriya/)
 
 # Contributors
  
- - [Amila Kothalawala](https://www.linkedin.com/in/amila-m-kothalawala-87357152/)
+ - [Amila Kothalawala](https://www.linkedin.com/in/amila-m-kothalawala/)
 
 # Table of Contents
 
@@ -36,20 +36,17 @@ No prequisites required
 
 # Installation
 
-Automated builds of the image are available on [Docker Hub](https://hub.docker.com/tiredofit/ubuntu) and 
+Automated builds of the image are available on [Docker Hub](https://hub.docker.com/r/openemail/ubuntu) and 
 is the recommended method of installation.
 
 
 ```bash
-docker pull tiredofit/ubuntu:(imagetag)
+docker pull openemail/ubuntu:(imagetag)
 ```
 
 The following image tags are available:
 
-* `14.04:latest` - Ubuntu Trusty 14.04
-* `16.04:latest` - Ubuntu Xenial 16.04
-* `18.04:latest` - Ubuntu Bionic 18.04
-* `latest` - Ubuntu Xenial - 18.04
+* `latest` - Ubuntu Bionic - 18.04
 
 
 # Quick Start
@@ -81,20 +78,20 @@ Below is the complete list of available options that can be used to customize yo
 | `ENABLE_CRON`     | Enable Cron - Default: `TRUE`                                   |
 | `ENABLE_SMTP`     | Enable SMTP services - Default: `TRUE`						|
 | `ENABLE_ZABBIX`   | Enable Zabbix Agent - Default: `TRUE`                           |
-| `TIMEZONE`        | Set Timezone - Default: `America/Vancouver`                     |
+| `TIMEZONE`        | Set Timezone - Default: `Asia/Colombo`                     |
 
 If you wish to have this send mail, set `ENABLE_SMTP=TRUE` and configure the following environment variables. See the [MSMTP Configuration Options](http://msmtp.sourceforge.net/doc/msmtp.html) for further information on options to configure MSMTP
 
 | Parameter         | Description                                                    |
 |-------------------|----------------------------------------------------------------|
 | `ENABLE_SMTP_GMAIL` | Add setting to supoprt sending through Gmail SMTP - Default: `FALSE` |
-| `SMTP_HOST`      | Hostname of SMTP Server - Default: `postfix-relay`                            |
+| `SMTP_HOST`      | Hostname of SMTP Server - Default: `postfix-openemail`                            |
 | `SMTP_PORT`      | Port of SMTP Server - Default: `25`                            |
 | `SMTP_DOMAIN`     | HELO Domain - Default: `docker`                                   |
-| `SMTP_MAILDOMAIN`     | Mail Domain From - Default: `example.org`						|
+| `SMTP_MAILDOMAIN`     | Mail Domain From - Default: `openemail.io`						|
 | `SMTP_AUTHENTICATION`     | SMTP Authentication - Default: `none`                                   |
 | `SMTP_USER`     | Enable SMTP services - Default: `user`						|
-| `SMTP_PASS`   | Enable Zabbix Agent - Default: `password`                           |
+| `SMTP_PASS`   | Enable SMTP password - Default: `password`                           |
 | `SMTP_TLS`        | Use TLS - Default: `off`                     |
 | `SMTP_STARTTLS`   | Start TLS from within Dession - Default: `off` |
 | `SMTP_TLSCERTCHECK` | Check remote certificate - Default: `off` |
