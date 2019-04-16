@@ -1,6 +1,3 @@
-# hub.docker.com/r/openemail/ubuntu
-
-
 # Introduction
 
 Dockerfile to build an [ubuntu](https://www.ubuntu.org/) container image.
@@ -10,10 +7,6 @@ Dockerfile to build an [ubuntu](https://www.ubuntu.org/) container image.
 * [zabbix-agent](https://zabbix.org) installed individual container monitoring.
 * Cron installed along with other tools (curl, less, logrotate, nano, vim) for easier management.
 * Ability to update User ID and Group ID Permissions for Development Purposes dyanmically.
-
-# Original Authors
-
-- [Dave Conroy](dave at tiredofit dot ca) [https://github.com/tiredofit]
 
 # Authors
 
@@ -166,6 +159,9 @@ For debugging and maintenance purposes you may want access the containers shell.
 ```bash
 docker exec -it (whatever your container name is e.g. ubuntu) bash
 ```
+# Original Authors Copyright
+
+- [Dave Conroy](dave at tiredofit dot ca) [https://github.com/tiredofit]
 
 # References
 
