@@ -158,7 +158,7 @@ docker exec -it (whatever your container name is e.g. ubuntu) bash
 ```
 # Original Authors Copyright
 
-- [Dave Conroy](dave at tiredofit dot ca)[https://github.com/tiredofit]
+- [Dave Conroy](https://github.com/tiredofit) (dave at tiredofit dot ca)
 
 # References
 
