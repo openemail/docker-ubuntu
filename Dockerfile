@@ -1,5 +1,5 @@
 FROM ubuntu:bionic
-LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
+LABEL maintainer="Chinthaka Deshapriya (chinthaka@cybergate.lk)
 
 ### Set Defaults
   ARG S6_OVERLAY_VERSION=v1.21.7.0
@@ -9,7 +9,7 @@ LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
       ENABLE_SMTP=TRUE \
       ENABLE_ZABBIX=TRUE \
       TERM=xterm \
-      ZABBIX_HOSTNAME=ubuntu.bionic
+      ZABBIX_HOSTNAME=ubuntu-openemail
 
 ### Dependencies Addon
   RUN set -x && \
@@ -46,7 +46,7 @@ LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
        apt-get clean -y && \
        rm -rf /var/lib/apt/lists/* /root/.gnupg /var/log/* && \
        mkdir -p /assets/cron && \
-       echo "America/Vancouver" > /etc/timezone && \
+       echo "Asia/Colombo" > /etc/timezone && \
        dpkg-reconfigure -f noninteractive tzdata && \
        \
 ### S6 Installation
