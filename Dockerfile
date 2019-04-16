@@ -1,5 +1,5 @@
 FROM ubuntu:bionic
-LABEL maintainer="Chinthaka Deshapriya (chinthaka@cybergate.lk)
+LABEL maintainer="Chinthaka Deshapriya (chinthaka@cybergate.lk)"
 
 ### Set Defaults
   ARG S6_OVERLAY_VERSION=v1.21.7.0
